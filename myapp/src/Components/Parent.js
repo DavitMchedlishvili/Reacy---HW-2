@@ -17,30 +17,28 @@ export default function Parent() {
         return (
          <h1>There is no Users</h1>
         )
-        } else {
-                return (
+        } 
+            return (
                     <>
             
-                      {users.map((user) => {
-                          return <Child 
-                            loggedIn = {isUserLoggedIn}
-                            users = {users}
-                            name = {user.name}
-                            lastname = {user.lastname}  
-                            age = {user.age}
-                            key={user.id} />
+                    {users.map((user) => {
+                        return <Child 
+                        loggedIn = {isUserLoggedIn}
+                        users = {users}
+                        name = {user.name}
+                        lastname = {user.lastname}  
+                        age = {user.age}
+                        key={user.id} />
     
                     })}
     
-                </>
-        )
-        }
-        
-    } else {
+                    </>
+                    )
+    }
         return <Child
         loggedIn = {isUserLoggedIn}
         />
-    }
+    
 
     
     

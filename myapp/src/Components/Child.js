@@ -11,12 +11,12 @@ export default function Child(props) {
     
         )
     
-    }else {
+    }
         return (
             <h1>you are not authorized to see user list.</h1>
         )
     }
     
 
-}
+
 
